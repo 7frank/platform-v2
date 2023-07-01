@@ -35,7 +35,7 @@
 		<input
 			type="hidden"
 			name="priceId"
-			value="price_1MmhOkELPOBIZNpzNzbcEB2r"
+			value="price_1NDY46ERi16pXUyOQLXuTTWI"
 		/>
 		<button class="btn variant-filled-primary mt-16 w-full">Checkout</button>
 	</form>
