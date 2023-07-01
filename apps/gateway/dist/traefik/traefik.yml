@@ -8,11 +8,12 @@ log:
   level: DEBUG
 
 api:
-  insecure: false
+  insecure: true
 
 entryPoints:
   web:
     address: :8000
-  # enable in case you need the dashboard
-  # traefik:
-  #   address: :8080
+  http:
+    address: :8001
+  traefik:
+    address: :8080

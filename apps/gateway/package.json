@@ -4,11 +4,13 @@
   "description": "the application gateway when deploying to vercel",
   "main": "index.js",
   "scripts": {
+    "build": "tsup server.js --format cjs && cp -r traefik/ dist/",
     "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "traefik": "^1.0.0"
+    "traefik": "^1.0.0",
+    "tsup": "^7.1.0"
   }
 }
