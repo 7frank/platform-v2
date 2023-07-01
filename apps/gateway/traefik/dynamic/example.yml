@@ -1,0 +1,21 @@
+http:
+  middlewares:
+    yahoo-Header:
+      headers:
+        customRequestHeaders:
+          Host: 'platform-v2-h43alh04s-7frank.vercel.app'
+          x-forwarded-host: 'platform-v2-h43alh04s-7frank.vercel.app'
+
+  routers:
+    yahoo-router:
+      entryPoints: ['web']
+      rule: 'PathPrefix(`/`)'
+      service: 'yahoo-svc'
+      middlewares:
+        - 'yahoo-Header'
+
+  services:
+    yahoo-svc:
+      loadBalancer:
+        servers:
+          - url: 'https://platform-v2-h43alh04s-7frank.vercel.app/'
