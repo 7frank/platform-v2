@@ -12,7 +12,7 @@ api:
 
 entryPoints:
   web:
-    address: :8000
+    address: :80
   # enable in case you need the dashboard
   # traefik:
   #   address: :8080
